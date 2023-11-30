@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head content) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/368fc17f53.js" crossorigin="anonymous"></script>
+    <!-- Add your custom CSS link here -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .navbar{
+        border-bottom: 1px solid #333;
+        }
+        .icon{
+            padding: 20px 40%;
+        }
+        .mng-btn{
+            margin: 0 5rem;
+        }
+        .content{
+            margin-top: 6em;
+        }
+        .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand card-title" href="/index.html">Centralised Nasha Mukti Platform</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="m-2 btn btn-primary" href="/admin-manage-profile.html">
+                        <i class="fa-solid fa-user p-1"></i>
+                        Manage Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="m-2 btn btn-danger" href="/logout.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>    
+                    Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mt-5 content">
+        <h2>Admin Dashboard</h2> <hr>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-hospital-user fa-5x icon"></i>
+                        <p class="card-text p-3">Manage all the information of patients.</p>
+                        <a href="/manage-patient.html" class="btn btn-primary mng-btn">Manage Patients</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-user-doctor fa-5x icon"></i>
+                        <p class="card-text text-center p-3">Keep track of all the counselors.</p>
+                        <a href="/manage-counselor.html" class="btn btn-primary mng-btn">Manage Counselors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-folder-open fa-5x icon"></i>
+                        <p class="card-text p-3">Generate reports on patient's progress.</p>
+                        <a href="/generate-report.html" class="btn btn-primary mng-btn">Generate Reports</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-light">
+        <div class="container mt-2 text-center text-dark">
+            <p>&copy; 2023 Developed by <a href="https://github.com/RawAtCode" class="text-dark">RawAtCode</a></p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS and Popper.js links here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add your custom JS link here -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head content) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Counselors</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add your custom CSS link here -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/368fc17f53.js" crossorigin="anonymous"></script>
+
+    <style>
+        .navbar{
+        border-bottom: 1px solid #333;
+        }
+        .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand card-title" href="/index.html">Centralised Nasha Mukti Platform</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="m-2 btn btn-primary" href="/admin-dashboard.html">
+                        <i class="fa-solid fa-user p-1"></i>
+                        Admin Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="m-2 btn btn-danger" href="/logout.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>    
+                    Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h2>Manage Counselors</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Contact Number</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Amit Sharma</td>
+                            <td>+91 98765 43210</td>
+                            <td>amit.sharma@email.com</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCounselorModal">Edit</button>
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeCounselorModal">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pooja Patel</td>
+                            <td>+91 87654 32109</td>
+                            <td>pooja.patel@email.com</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCounselorModal">Edit</button>
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeCounselorModal">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rahul Singh</td>
+                            <td>+91 76543 21098</td>
+                            <td>rahul.singh@email.com</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCounselorModal">Edit</button>
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeCounselorModal">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Jahnvi Sharma</td>
+                            <td>+91 65432 10987</td>
+                            <td>jahnvi.sharma@email.com</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCounselorModal">Edit</button>
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeCounselorModal">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Ankit Verma</td>
+                            <td>+91 54321 09876</td>
+                            <td>ankit.verma@email.com</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editCounselorModal">Edit</button>
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#removeCounselorModal">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                    <!-- Add more counselor rows as needed -->
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addCounselorModal">Add A New Counselor</button>
+    </div>
+
+    <footer class="footer bg-light">
+        <div class="container mt-2 text-center text-dark">
+            <p>&copy; 2023 Developed by <a href="https://github.com/RawAtCode" class="text-dark">RawAtCode</a></p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS and Popper.js links here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add your custom JS link here -->
+    <script src="js/script.js"></script>
+</body>
+</html>
